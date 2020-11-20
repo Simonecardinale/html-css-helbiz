@@ -109,24 +109,25 @@ font-size: 36px;
 /* 1 sezione */
 
 .row .col-lg-10 .row .col-lg-5 {
+    margin: 50px 0;
     height: 600px;
 }
-
 .bici-container {
-    padding: 50px;
-    background-color: #fafafa;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #fafafa;
 }
+
 
 .bici-container >* {
     margin-top: 20px;
 }
 
 .bici-container img {
-    width: 300px;
+    width: 100%;
 }
 
 .bici-container a {
