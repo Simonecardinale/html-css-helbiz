@@ -1,7 +1,27 @@
 /* stili generali */
 body {
     font-family: 'Open Sans', sans-serif;
+    /* cancellare */
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    /* /cancellare */
 }
+
+/* cancellare */
+.row {
+    height: 500px;
+}
+
+nav .container .row [class*="col-"] {
+    height: 100px;
+}
+
+section:nth-child(4) .container .row{
+    height: 300px;
+}
+
+/* /cacellare */
 
 a {
     text-decoration: none;
@@ -9,14 +29,4 @@ a {
 
 /* /stili generali */
 
-/* nav bar */
 
-nav .container .row [class*="col-"] {
-    height: 100px;
-}
-
-header .container .row .col-lg-12, section .container .row {
-    height: 500px;
-}
-
-/* /nav-bar */
