@@ -2,19 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-align: center;
 }
+
+  /* framework */
 
 .container {
-    max-width: 1200px;
-    /* border: 2px solid red; */
-    margin: 200px auto;
-}
-
-.container::after {
-    clear: both;
-    content: "";
-    display: table;
+    max-width: 1270px;
+    border: 2px solid red;
+    margin: 0 auto;
 }
 
 .row::after {
@@ -23,12 +18,10 @@
     display: table;
 }
 
-.row {
-    /* height: 200px; */
-}
-
 [class*="col-"] {
     float: left;
+    border: 1px solid black;
+    height: 100%;
 }
 
 .col-lg-1 {

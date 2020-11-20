@@ -1,0 +1,22 @@
+/* stili generali */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* /stili generali */
+
+/* nav bar */
+
+nav .container .row [class*="col-"] {
+    height: 100px;
+}
+
+header .container .row .col-lg-12, section .container .row {
+    height: 500px;
+}
+
+/* /nav-bar */
