@@ -3,12 +3,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     /* cancellare */
     text-align: center;
-    text-transform: uppercase;
     /* /cancellare */
 }
 
 /* cancellare */
-.row {
+.debug {
     height: 500px;
 }
 
@@ -25,6 +24,10 @@ a {
 }
 ul {
     list-style: none;
+}
+
+.position {
+    position: relative;
 }
 
 /* /stili generali */
@@ -78,10 +81,59 @@ nav .container .row .col-lg-4 img {
 /* /nav bar */
 
 header {
+    height: 500px;
     background-image: url('../img/hero-bg.jpg');
+    position: relative;
 }
 
+.testo-center {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.testo-center h1 {
+font-size: 36px;
+}
+
+.testo-center h2 {
+    font-size: 16px;
+}
+
+.testo-center > * {
+    margin-top: 30px;
+}
+
+/* 1 sezione */
+
+.row .col-lg-10 .row .col-lg-5 {
+    height: 600px;
+}
+
+.bici-container {
+    padding: 50px;
+    background-color: #fafafa;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bici-container >* {
+    margin-top: 20px;
+}
+
+.bici-container img {
+    width: 300px;
+}
+
+.bici-container a {
+    color: blue;
+}
+
+/* / 1 sezione */
 
 
 
@@ -96,6 +148,34 @@ header {
 
 @media screen and (min-width: 769px) and (max-width:991px) {
     
+    .display-none {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+
+    .languages {
+        position: relative;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+
     .display-none {
         display: none;
     }
