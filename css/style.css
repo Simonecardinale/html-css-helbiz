@@ -3,7 +3,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     /* cancellare */
     text-align: center;
-    font-size: 32px;
     text-transform: uppercase;
     /* /cancellare */
 }
@@ -13,9 +12,6 @@ body {
     height: 500px;
 }
 
-nav .container .row [class*="col-"] {
-    height: 100px;
-}
 
 section:nth-child(4) .container .row{
     height: 300px;
@@ -25,8 +21,54 @@ section:nth-child(4) .container .row{
 
 a {
     text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
 }
 
 /* /stili generali */
 
+/* nav bar */
+
+nav .container .row {
+    height: 50px;
+}
+
+nav .container .row .col-lg-4 {
+    position: relative;
+}
+
+nav .container .row .col-lg-4 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu-item {
+    text-align: right;
+}
+
+.menu-item li, .menu-languages li {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 20px;
+    font-size: 12px;
+}
+.menu-languages {
+    text-align: left;
+}
+.menu-languages li a {
+    padding-right: 5px;
+}
+
+.menu-item li:hover, .menu-languages li:hover {
+    background-color: rgba(64,64,64,0.51);
+}
+
+/* /nav bar */
+
+header {
+    background-image: url('../img/hero-bg.jpg');
+}
 
