@@ -72,6 +72,7 @@
     width: calc(100% / 12 * 12);
 }
 
+
 /* medium  */
 
 @media screen and (min-width: 769px) and (max-width:991px) {
@@ -123,6 +124,7 @@
     .col-md-12 {
         width: calc(100% / 12 * 12);
     }
+
 
     /* offset */
 

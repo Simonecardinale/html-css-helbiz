@@ -53,11 +53,16 @@ nav .container .row .col-lg-4 img {
     display: inline-block;
     line-height: 50px;
     padding: 0 20px;
-    font-size: 12px;
+    font-size: 10px;
 }
 .menu-languages {
     text-align: left;
 }
+
+.menu-languages li {
+    padding: 0 5px;
+}
+
 .menu-languages li a {
     padding-right: 5px;
 }
@@ -66,9 +71,45 @@ nav .container .row .col-lg-4 img {
     background-color: rgba(64,64,64,0.51);
 }
 
+.menu-button{
+    display: none;
+}
+
 /* /nav bar */
 
 header {
     background-image: url('../img/hero-bg.jpg');
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 769px) and (max-width:991px) {
+    
+    .display-none {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+
+    .languages {
+        position: relative;
+    }
+}
