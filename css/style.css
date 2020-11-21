@@ -12,9 +12,9 @@ body {
 }
 
 
-section:nth-child(4) .container .row{
+/* section:nth-child(4) .container .row{
     height: 300px;
-}
+} */
 
 /* /cacellare */
 
@@ -136,9 +136,115 @@ font-size: 36px;
 
 /* / 1 sezione */
 
+/* 2 sezione  */
+.oldman {
+    height: 400px;
+    background-image: url('../img/index-banner.1f6fd0a.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.explain-text:first-child h2 {
+    margin-left: calc(100% / 12 * 7);
+}
+
+.explain-text-container {
+    margin-right: calc(100% / 12 * 7);
+}
+
+.explain-text >* {
+    text-align: left;
+    margin: 150px 0;
+}
+
+/* .iphone-container {
+    height: 0;
+} */
+
+.iphone {
+    width: 60%;
+    transform: translate(0,-50%);
+}
+
+/* /2 sezione */
+
+/* 3 sezione */
+
+section:nth-child(5) {
+    background-image: url('../img/scooter.f0a0397.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-container {
+    width: 100%;
+    padding: 150px 0;
+}
 
 
+.banner-container > h2 {
+    font-size: 36px;
+}
 
+.banner-container > *, .banner-container > h3 > a {
+    margin: 30px 0;
+    color: white;
+}
+
+/* /3 sezione */
+
+/* 4 sezione */
+
+.card-left-container{
+    background: linear-gradient(#3f5467, #27323c);
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.card-right-container {
+    margin-top: 30px;
+}
+
+.card-left >*, .card-left>h3>a, .card-right >*, .card-right>h3>a {
+    color: white;
+    margin: 20px 0;
+}
+
+.card-left > h3:nth-child(n+3) {
+    display: inline-block;
+}
+
+.card-iphone {
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+}
+
+.card-right-container { 
+    background-image: url('../img/city.7c8c928.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.layover {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.51);
+    padding: 30px;
+}
+
+
+/* /4 sezione */
+
+
+/* 5 sezione */
+
+.index {
+    background-color: white;
+    position: relative;
+    z-index: 8;
+}
+
+
+/* /5 sezione */
 
 
 
@@ -165,7 +271,20 @@ font-size: 36px;
     .languages {
         position: relative;
     }
-    
+
+    .iphone {
+        opacity: 0;
+    }
+
+    .index {
+        position: static;
+    }
+
+    .card-right-container {
+        position: relative;
+        z-index: 8;
+    }
+
 }
 
 
@@ -194,4 +313,24 @@ font-size: 36px;
     .languages {
         position: relative;
     }
+
+    .iphone {
+        opacity: 0;
+    }
+
+
+    .index {
+        position: static;
+    }
+
+    .card-right-container {
+        position: relative;
+        z-index: 8;
+    }
+
+    section:nth-child(6) {
+        position: relative;
+        z-index: 9999;
+    }
+
 }
