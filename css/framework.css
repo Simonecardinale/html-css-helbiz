@@ -20,7 +20,7 @@
 
 [class*="col-"] {
     float: left;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 100%;
 }
 
@@ -127,8 +127,8 @@
 
 @media screen and (min-width: 769px) and (max-width:991px) {
 
-    [class*="col-lg-offset-"] {
-        display: none;
+    [class*="col-offset-lg-"] {
+        margin-left: 0;
     } 
     
     .col-md-1 {

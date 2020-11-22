@@ -197,6 +197,7 @@ section:nth-child(5) {
 .card-left-container{
     background: linear-gradient(#3f5467, #27323c);
     padding: 30px;
+    padding-bottom: 0;
     margin-top: 30px;
 }
 
@@ -213,11 +214,6 @@ section:nth-child(5) {
     display: inline-block;
 }
 
-.card-iphone {
-    position: relative;
-    z-index: 2;
-    margin-top: 50px;
-}
 
 .card-right-container { 
     background-image: url('../img/city.7c8c928.jpg');
@@ -231,18 +227,50 @@ section:nth-child(5) {
     padding: 30px;
 }
 
+.card-iphone {
+    height: 280px;
+    margin-top: 5px;
+}
 
 /* /4 sezione */
 
 
 /* 5 sezione */
 
-.index {
-    background-color: white;
+.banner-image-container {
+    margin-top: 100px;
+    background-image: url('../img/banner-image.jpg');
+    background-size: cover;
     position: relative;
-    z-index: 8;
 }
 
+
+.social-container {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-text-container > a {
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 17px;
+    padding: 5px;
+}
+.social-text-container > a:hover {
+    background-color: grey;
+}
 
 /* /5 sezione */
 
@@ -276,14 +304,6 @@ section:nth-child(5) {
         opacity: 0;
     }
 
-    .index {
-        position: static;
-    }
-
-    .card-right-container {
-        position: relative;
-        z-index: 8;
-    }
 
 }
 
@@ -318,19 +338,5 @@ section:nth-child(5) {
         opacity: 0;
     }
 
-
-    .index {
-        position: static;
-    }
-
-    .card-right-container {
-        position: relative;
-        z-index: 8;
-    }
-
-    section:nth-child(6) {
-        position: relative;
-        z-index: 9999;
-    }
 
 }
